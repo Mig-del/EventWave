@@ -1,12 +1,99 @@
-{% extends 'base.html' %}
+<!-- {% extends 'base.html' %}
 {% block content %}
+<head>
+    <title>
+        
+    </title>
+
+
+
+
+
+
+</head>
 <h1>EventWave</h1>
 <div>
     
     <p>Event: {{ context.title }}</p>
     <p>Date: {{ context.pub }}</p>
     <p>Performer: {{ context.performer }}</p>
-    <p>Type: {{ context.kind }}</p>
+    <p>Type: {{ context.kind }}</p> -->
     
-</div>
-{% endblock content %}
+<!-- <body>
+    <section class="section container" id="search">
+        <div class="row">
+            <div  class="col s12 15">
+                <h5 class="indigo-text text- darken-4">search near you</h5>
+                <div class="col s12 15offset-l2">
+                    <form action="">
+                        <div class="col s3">
+                            <input type="number" id="zip" min="5" >
+                            <label for="number">zip code</label>
+                        </div>
+                        <div class="col s3">
+                            <id="radius">
+                            <ul id="radius"><label for="number">mile radius</label></ul>
+                            <li id="option1"><a href="#">Option 1</a></li>
+                            <li id="option2"><a href="#">Option 2</a></li>
+                            <li id="option3"><a href="#">Option 3</a></li>
+                        </div>
+                        <div class="col s3">
+                            <input type="text" id="type">
+                            <label for="text">type of event</label>
+                        </div>
+                        <div class="col s3">
+                            <input type="submit" id="submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body> -->
+
+<section class="section container" id="search">
+    <div class="row">
+        <div  class="col s12 15">
+            <h5 class="indigo-text text- darken-4">search near you</h5>
+              <div class="col s12 15offset-l8">
+                <form action="">
+                    <div class="col s3">
+                        <label for="number">zip code</label>
+                        <input type="number" id="zip">
+                        
+                    </div>
+                    <div class="col s3">
+                        <!-- <input type="checkbox" id="radius"> -->
+                        <label>mile radius</label>
+                        <br>
+                        <input type="checkbox" id="option1" name="option1" value="5mil">
+                        <label for="option1"> 5 miles</label><br>
+                        <input type="checkbox" id="option2" name="option2" value="10mil">
+                        <label for="option2"> 10 miles</label><br>
+                        <input type="checkbox" id="option3" name="option3" value="15mil">
+                        <label for="option3"> 15 miles</label><br>
+                    </div>
+                    <div class="col s3">
+                        <label for="checkbox">type of event</label>
+                        <!-- <input type="checkbox" id="type"> -->
+                        <br>
+                        <input type="checkbox" id="event1" name="event1" value="music">
+                        <label for="event1"> Music Concert</label><br>
+                        <input type="checkbox" id="event2" name="event2" value="sport">
+                        <label for="event2"> Sports</label><br>
+                        <input type="checkbox" id="event3" name="event3" value="play">
+                        <label for="event3"> Theatre</label><br>
+                        
+                    </div>
+                    <div class="col s3">
+                        <input type="submit" id="submit">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- </div>
+{% endblock content %} -->
